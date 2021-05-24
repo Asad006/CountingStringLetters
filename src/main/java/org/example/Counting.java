@@ -1,16 +1,19 @@
 package org.example;
 
+import javax.swing.*;
 import java.util.Scanner;
+
 
 public class Counting {
     public static void main(String[] args) {
 
         String word;
+        String word1;
         Scanner input = new Scanner(System.in);
 
-        System.out.println("What is the input string?");
-        word = input.nextLine();
-        System.out.printf("%s has %d characters", word,word.length());
+        word = JOptionPane.showInputDialog("What is the input string?");
+
+        JOptionPane.showMessageDialog(null,word +" has "+word.length()+" characters","Rectangle", JOptionPane.INFORMATION_MESSAGE);
 
         // using our function
         StringLength l = new StringLength(word);
