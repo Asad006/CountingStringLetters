@@ -12,11 +12,11 @@ public class Counting {
         Scanner input = new Scanner(System.in);
 
         word = JOptionPane.showInputDialog("What is the input string?");
-
-        JOptionPane.showMessageDialog(null,word +" has "+word.length()+" characters","Rectangle", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(null,word +" has "+word.length()+" characters","Result", JOptionPane.INFORMATION_MESSAGE);
 
         // using our function
         StringLength l = new StringLength(word);
+
         System.out.printf("\n%s has %d characters", word,l.length());
     }
 }
